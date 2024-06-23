@@ -13,7 +13,7 @@ var student = {
     score : 90
 };
 
-let{firstName,lastName,score} = student;
+let{firstName,lastName,score} = student; // destructuring array
 
 var arr : number[] =[20, 30, 12,30,100, 20];
  
@@ -36,52 +36,8 @@ console.log(a[0] == b[0]);//true,value is equal.
 console.log(a[0] == b[0]);//false , diffrent data type
 
 
-//using optional parameter(?) 
-// function display(id: number , name : string ,role ?: string){
-//     console.log(`id: ${id}`);
-//     console.log(`name: ${name}`);
-// if (role != undefined ) {
-//     console.log(`role: ${role}`);
 
-// }
-// }
-// display(1,'jack');
-// display(2,'ashu');
-
-//using Default parmeter/values
-function display(id: number , name : string ,role : string = 'guest value or default value'){
-    console.log(`id: ${id}`);
-    console.log(`name: ${name}`);
-if (role != undefined ) {
-    console.log(`role: ${role}`);
-
-}
-}
-display(1,'jack');
-display(2,'ashu','Admin');
-
-//function overloading
-
-function doubleMe(x?:number);
-function doubleMe(x:string);
-function doubleMe(x:string[]);
-
-function doubleMe(x:any){
-    
-}
-doubleMe(10);
-
-//... rest parameter
-// var product = function(res :string,...num){
-
-// }
-
-//arrow function
-var hello = (name: string): string => {
-    return 'hello' + name;
-}
-console.log(hello('jack'));
-
-//----------------------------------
-// how many time we can declare array in js?
+// there are 2 types of array in js and ts:
+// 1. homogeneous
+// 2. heterogeneous 
 
